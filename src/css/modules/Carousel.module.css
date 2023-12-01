@@ -1,0 +1,46 @@
+.my_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.carousel_container {
+    position: relative;
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.img_description {
+    position: absolute;
+    width: 50%;
+    padding: 10px;
+    color: white;
+    background-color: rgba(107, 107, 107, 0.5);
+    border-radius: 10px;
+    bottom: 0;
+    right: 0;
+}
+
+.img_description>h2 {
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+}
+
+.img_description>p {
+    text-shadow: 1px 1px 1px black;
+}
+
+.img_carousel {
+    width: 1300px;
+    height: 650px;
+    object-fit: cover;
+}
+
+.icon:hover {
+    color: gray;
+    cursor: pointer;
+    stroke: black;
+}
