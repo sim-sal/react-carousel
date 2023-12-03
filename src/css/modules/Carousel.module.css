@@ -44,10 +44,10 @@
 }
 
 .icon {
-    color: rgb(255, 255, 255);
+    color: black;
 }
 
 .icon:hover {
-    color: red;
+    color: rgb(170, 170, 170);
     cursor: pointer;
 }
