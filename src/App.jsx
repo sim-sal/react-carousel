@@ -36,6 +36,21 @@ function App() {
       image: "venom.jpg",
       description: "Un simbionte alieno che si lega a Eddie Brock, conferendogli poteri sovrumani, ma lottando contro la sua natura malvagia."
     },
+    {
+      title: "Loki",
+      image: "loki.jpg",
+      description: "Dio dell'inganno e fratello adottivo di Thor, noto per la sua astuzia e la sua abilità nel manipolare gli eventi."
+    },
+    {
+      title: "Iron Man",
+      image: "iron_man.jpg",
+      description: "Tony Stark, un genio miliardario e filantropo, che costruisce una potente armatura per diventare il supereroe noto come Iron Man."
+    },
+    {
+      title: "Groot",
+      image: "groot.jpg",
+      description: "Un essere di legno in grado di rigenerarsi, membro dei Guardiani della Galassia, noto per la sua famosa frase 'Sono Groot.'"
+    }
   ];
 
 
