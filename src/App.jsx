@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Carousel from './components/Carousel'
-import style from "./css/modules/Body.module.css"
+import style from "./css/modules/Main.module.css"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -56,11 +56,11 @@ function App() {
 
 
   return (
-    <body>
+    <main>
       <>
         <Carousel structure={carouselStructure} />
       </>
-    </body>
+    </main>
   )
 }
 

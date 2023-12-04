@@ -1,15 +1,27 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import style from "../css/modules/Carousel.module.css"
-import { useState } from 'react';
-
-/**
- * 
- * @param {{structure: {title:string, image:string, description:string}}} param
- * @returns 
- */
+import style from "../css/modules/Carousel.module.css";
+import { useState, useEffect } from 'react';
 
 export default function Carousel({ structure }) {
     const [activeItem, setActiveItem] = useState(0);
+
+    const handleKeyDown = (event) => {
+        if (event.key === 'ArrowLeft') {
+            // Freccia sinistra, decrementa l'elemento attivo
+            setActiveItem((prev) => (prev - 1 + structure.length) % structure.length);
+        } else if (event.key === 'ArrowRight') {
+            // Freccia destra, incrementa l'elemento attivo
+            setActiveItem((prev) => (prev + 1) % structure.length);
+        }
+    };
+
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, []);
 
     return (
         <div className={style.my_container}>
